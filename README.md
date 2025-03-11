@@ -1,18 +1,23 @@
-# tic-tac-toe-solver
-# Tic Tac Toe Solver
+# Tic Tac Toe Game
 
-A simple Python-based Tic Tac Toe game that simulates two players making random moves on a 3x3 board. The game checks for horizontal, vertical, and diagonal win conditions, and it also handles tie scenarios.
+A simple Python-based Tic Tac Toe game where a user plays against an AI. The game allows user input and evaluates win/tie conditions after each move.
 
 ## Features
 
-- **Board Initialization:**  
-  Creates a 3x3 game board using NumPy.
+- **User vs AI Gameplay:**
+  - The user enters their move manually.
+  - The AI makes random valid moves.
 
-- **Random Moves:**  
-  Players make moves at random available positions on the board.
+- **Board Initialization:**
+  - Creates a 3x3 game board using NumPy.
 
-- **Win/Tie Detection:**  
-  Evaluates the board after each move to determine if there is a win or tie.
+- **Move Validation:**
+  - Ensures the user enters valid row and column indices (0-2).
+  - Prevents moves in already occupied positions.
+
+- **Win/Tie Detection:**
+  - Checks for horizontal, vertical, and diagonal wins.
+  - Determines if the game ends in a tie.
 
 ## How to Run
 
